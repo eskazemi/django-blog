@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {{article.title}}<br>
+    {{article.body|safe}}
+    <hr>
+    {{article.publish|timesince}}
+{% endblock %}
